@@ -16,6 +16,7 @@ messages = [{'title': 'Message One',
 def index():
     return render_template('index.html', messages=messages)
 
+
 @app.route('/create/', methods=('GET', 'POST'))
 def create():
     if request.method == 'POST':
